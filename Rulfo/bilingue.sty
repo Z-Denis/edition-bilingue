@@ -59,6 +59,26 @@
 \renewcommand{\headrulewidth}{0pt}
 \fancyhead[LE,RO]{\bf\textcolor{purple}{\thepage}}
 
+\newcommand{\importcover}[3]{%
+	\begin{titlepage}
+		\includepdf{#1#2}
+	\end{titlepage}
+
+	%\myemptypage
+	\thispagestyle{empty}
+	\vspace*{\fill}
+	\begin{center}
+		\begin{minipage}{11em}
+			#3
+		\end{minipage}
+	\end{center}
+	%\vspace*{\fill}
+	\addtocounter{page}{-1}
+	\newpage
+
+	\myemptypage
+}
+
 \newcommand{\importbilingualpages}[5]{%
 	\fancyhead[CE]{#2}
 	\fancyhead[CO]{#4}
