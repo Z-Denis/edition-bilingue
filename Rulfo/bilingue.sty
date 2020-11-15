@@ -7,30 +7,28 @@
 }
 \ProcessOptions
 
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{textcomp}
+\usepackage{microtype}
 \usepackage[\leftlang,\rightlang]{babel}
 
 \usepackage{import}
 \usepackage{pdfpages}
 \usepackage{xcolor}
 
-\usepackage{textcomp}
-
-
 \usepackage[T1]{tipa}
 
 \usepackage[a5paper,bottom=2cm]{geometry}
 %\usepackage{showframe}
 
-\usepackage[utf8]{inputenc}
-\usepackage[T1]{fontenc}
-\usepackage{lmodern}
-\usepackage{textcomp}
-
 \usepackage{hyperref}
 
-\usepackage[series={},nocritical,noend,noeledsec,nofamiliar,noledgroup]{reledmac}
-\usepackage{reledpar}
+\usepackage[series={},nocritical,noend,noeledsec,nofamiliar,noledgroup,nopenalties]{reledmac}
+\usepackage[shiftedpstarts]{reledpar}
 \numberlinefalse
+\setgoalfraction{0.95}
 
 \usepackage{afterpage}
 \newcommand\myemptypage{
